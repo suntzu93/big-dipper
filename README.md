@@ -1,6 +1,7 @@
 # Big Dipper :sparkles:
 
-Block Explorer for Cosmos
+Block Explorer for Evmos. 
+Deployed at this [website](https://evmos.azclub.pro/)
 
 ## Projects running on mainnets
 

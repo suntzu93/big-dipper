@@ -47,7 +47,10 @@ export default class Block extends Component{
             if (this.props.blockExist){
                 let block = this.props.block;
                 let proposer = block.proposer();
-                let moniker = proposer?proposer.description.moniker:'';
+                var moniker = "";
+                if(typeof(proposer) != 'undefined' && typeof(proposer.description) != 'undefined'){
+                    moniker = proposer?proposer.description.moniker:'';
+                }
                 let profileUrl = proposer?proposer.profile_url:'';
 
                 return <Container id="block">
